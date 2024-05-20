@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h2 id="myHeading">Hello World!</h2>
-    <button onclick="changeText()">Click me</button>
+<body class="w-full flex">
+    <div id="left"
+        class="border-sky-400  rounded-md px-4 py-4">
+        <h2 id="myHeading">Hello World!</h2>
+        <div id="btn" class="border-sky-400 border-solid border-2 rounded-md px-4 bg-blue-500">
+            <button onclick="changeText(),addBgColorLeft(),changeBtnColor()">Click me</button>
+        </div>
+    </div>
     
-    <h2 id="myHeading1">I am Modtanoy</h2>
-    <button onclick="changeMe()">Click me</button>
+
+    <div id="right"
+        class="border-sky-400 rounded-md px-4 py-4">
+            <h2 id="myHeading1">Hello Modtanoy</h2>
+            <div id="btn2" class="border-sky-400 border-solid border-2 rounded-md px-4 bg-purple-500">
+                <button onclick="greeting(),changeBtnColor2(),addBgColorRight()">Click me</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
